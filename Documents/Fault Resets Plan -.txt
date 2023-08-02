@@ -1,0 +1,23 @@
+Fault Resets Plan -
+
+The database fields required for Fault Resets as well as their recommended datatypes are given below.
+
+FIELD			DATATYPE
+category 		varchar(200)
+fault_id 		varchar(200)
+second_response 	varchar(200)
+override_window_ms 	varchar(200)
+device_reset 		varchar(1000)
+reset_attempts 		varchar(200)
+notes 			varchar(1000)
+
+
+Option 1: Store Fault Resets in Failsafes Table
+	- Store additional columns for fault resets in same table as failsafes
+	- Requires a flag to indicate whether an entry in this table is a fault reset
+	- If flag is true, then only display the columns in the table that are relevant to a fault reset (this view page is currently a mockup and has not been implemented)
+	- If flag is false, then display columns relevant to a failsafe which would be the page currently being shown for viewing failsafes
+
+
+Option 2: Store Fault Resets in a separate table for each version
+	- Create a table with only the fields listed above with suffix "_fault_resets" (similar to the other tables for each release)
