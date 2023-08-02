@@ -1,0 +1,11 @@
+release/main.o
+release/mainwindow.o
+release/markrelease.o
+release/mymodel.o
+release/passwordprompt.o
+release/updatedatabase.o
+release/moc_mainwindow.o
+release/moc_markrelease.o
+release/moc_mymodel.o
+release/moc_passwordprompt.o
+release/moc_updatedatabase.o

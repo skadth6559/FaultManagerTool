@@ -1,0 +1,11 @@
+debug/main.o
+debug/mainwindow.o
+debug/markrelease.o
+debug/mymodel.o
+debug/passwordprompt.o
+debug/updatedatabase.o
+debug/moc_mainwindow.o
+debug/moc_markrelease.o
+debug/moc_mymodel.o
+debug/moc_passwordprompt.o
+debug/moc_updatedatabase.o
